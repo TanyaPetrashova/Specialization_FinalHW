@@ -15,7 +15,6 @@ string [] newArray = new string [array.Length];
 
 void PrintArray (string [] array)       // метод, который выводит массив строк на экран
 {
-   //int count = array.Length;
    for (int i = 0; i < array.Length; i++)
    {
     Console.Write($"{array[i]} ");
@@ -26,13 +25,13 @@ void PrintArray (string [] array)       // метод, который вывод
 
 void ResArray (string [] array, string [] newArray)   // метод, который находит элементы строк, длина которых меньше или равна 3 симв.
 {
-    int index = 0;
+    int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
         {
-            newArray[index] = array[i];
-            index++;
+            newArray[count] = array[i];
+            count++;
         }
     }
 }
